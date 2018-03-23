@@ -1,0 +1,13 @@
+@startuml
+
+actor LanguageLearner as ll
+top to bottom direction
+ll -> (Find a Tandem Partner)
+ll -left-> (To have a guide for the tandeming)
+ll ---> (Stay motivated to learn the language)
+ll --> (To see the progress she/he's done in the past)
+ll -up-> (To be able to use the skills/knowldge she/he gained)
+ll --> (To have a topic to talk about for every meeting)
+ll ---> (To have somebody on side to ask linguistic questions)
+
+@enduml
