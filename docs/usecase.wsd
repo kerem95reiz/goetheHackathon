@@ -1,7 +1,6 @@
 @startuml
 
 actor LanguageLearner as ll
-top to bottom direction
 ll -> (Find a Tandem Partner)
 ll -left-> (To have a guide for the tandeming)
 ll ---> (Stay motivated to learn the language)

@@ -1,0 +1,18 @@
+@startuml signup
+
+participant LanguageLearner as ll
+participant System as sys
+
+ll -> sys: signup(displayName, email, password)
+alt password is less than 8 chars
+    ll <-- sys: Password must contain at least 8 characters
+else email is already registered
+    ll <-- sys: The email is already 
+else this isn't a valid email address
+    ll <-- sys: An unvalid email address is entered
+else displayName is already used
+    ll <-- sys: The display name is already used
+else everything suits
+    ll <-- sys: RedirectToNewCreatedAccount()
+end
+@enduml
